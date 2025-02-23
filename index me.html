@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in</title>
+    <link rel="icon" type="image/png" href="logo image-photoaidcom-cropped.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Navbar -->
+    <div id="navbar">
+      
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-button {
+            font-size: 20px;
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            /* position: fixed; */
+            top: 15px;
+            left: 15px;
+            display: none;
+        }
+        .sidebar {
+          z-index: 2;
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background: #333;
+            color: white;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            background: #555;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            background: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .show-sidebar {
+            left: 0;
+        }
+        @media screen and (max-width: 1100px) {
+            .menu-button {
+                display: block;
+            }
+        }
+    </style>
+
+    <button class="menu-button" onclick="toggleSidebar()">☰ </button>
+    <div class="sidebar" id="sidebar">
+        <button class="close-button" onclick="toggleSidebar()">✖</button>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Address</li>
+            <li>login & sign up</li>
+            <li>Language</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("show-sidebar");
+        }
+    </script>
+
+
+
+      <!-- Amazone logo -->
+      <div id="nav-logo" class="nav-same"></div>
+      <!-- Address Box -->
+        <div id="nav-address" class="nav-same">
+          <p id="nav-delever">Delivering to panipat 132103</p>
+          <p id="nav-location"><i id="nav-locotion-margin" class="fa-solid fa-location-dot"></i>Updated location</p>
+        </div>
+        <!-- Search Bar -->
+      <div id="nav-search" class="nav-same">
+
+        <div id="nav-dropdown-all">
+          <select name="All" id="nav-dropdown"><!--  Dropdown -->
+            <option value="all" selected hidden>All</option>
+            <option value="Apps & Game">Apps & Game</option>
+            <option value="Gift card">Gift card</option>
+            <option value="Books">Books</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Watches">Watches</option>
+            <option value="Home & Kitchen">Home & Kitchen</option>
+         </select>
+        </div>
+        <!-- search in Amazone.in -->
+          <input id="nav-search-bar-id" type="text" placeholder="Search Amazone.in">
+        <!-- search logo -->
+        <div id="nav-serch-logo" class="nav-same">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+      </div>
+      <!-- language -->
+      <div id="nav-lang-option" class="nav-same">
+        <p>ENG</p>
+      </div>
+      <!-- Account -->
+      <div id="nav-account" class="nav-same">
+        <p id="nav-sign-in">
+          Hello,sign in
+        </p>
+        <p id="nav-account-list">
+          Account & List
+        </p>
+      </div>
+      <!-- Return & order -->
+      <div id="nav-return" class="nav-same">
+        <p id="nav-r">
+          Return
+        </p>
+        <P id="nav-o">
+          &Orders
+        </P>
+      </div>
+      <!-- Cart -->
+      <div id="nav-cart" class="nav-same">
+        <p><i id="nav-c-logo" class="fa-solid fa-cart-plus"></i>Cart</p>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- Navbar ka nicha vala -->
+<div id="nav-items">
+
+    <div class="items">MX Player</div>
+    <div class="items">Sell</div>
+    <div class="items">Best Sellers</div>
+    <div class="items">Mobiles</div>
+    <div class="items">Today's Deals</div>
+    <div class="items">Electronics</div>
+    <div class="items">Customer Service</div>
+    <div class="items">Amazon Pay</div>
+    <div class="items">Prime</div>
+    <div class="items">Home & Kitchen</div>
+    <div class="items">New Releases</div>
+    <div class="items">Fashion</div>
+    <div class="items">Computers</div>
+    <div class="items">Cars</div>
+    <div class="items">Books</div>
+    <div class="items">Toys&Games</div>
+
+  </div>
+  </header>
+
+  <main>
+    <div class="hero-section">
+      
+<style>
+  * {box-sizing: border-box}
+  body { margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="image 1.jpg" style="width:100%">
+   
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="image 2.jpg" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="image 3.jpg" style="width:100%">
+    
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+  
+  
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+  
+  
+    </div>
+
+
+
+    <!-- box items -->
+
+
+    <div id="contant">
+
+
+
+
+
+      <!-- class = B and Class=D -->
+
+
+      <div id="a1" class="B">
+        <p class="text-starting">Appliances for your home | Up to 55% off</p>
+            <div id="try">
+        <div id="c1" class="D"></div>
+        <div id="c2" class="D"></div>
+        <div id="c3" class="D"></div>
+        <div id="c4" class="D"></div>
+            </div>
+         <p ><a>see more</a></p>   
+      </div>
+
+
+
+      <div id="a2" class="B" >
+        <p class="text-starting">Revamp your home in style</p>
+          <div id="try">
+        <div id="e1" class="D"></div>
+        <div id="e2" class="D"></div>
+        <div id="e3" class="D"></div>
+        <div id="e4" class="D"></div>
+          </div>
+          <p ><a>see more</a></p>   
+      </div>
+
+
+
+      <div id="a3" class="B" >
+        <p class="text-starting">Starting ₹149 | Headphones</p>
+        <div id="try">
+        <div id="f1" class="D"></div>
+        <div id="f2" class="D"></div>
+        <div id="f3" class="D"></div>
+        <div id="f4" class="D"></div>
+      </div>
+      <p ><a>see more</a></p>   
+      </div>
+
+
+
+      <div id="a4" class="B">
+        <p class="text-starting">Starting ₹199 | Amazon Brands & more</p>
+        <div id="try">
+        <div id="g1" class="D"></div>
+        <div id="g2" class="D"></div>
+        <div id="g3" class="D"></div>
+        <div id="g4" class="D"></div>
+      </div>
+      <p ><a>see more</a></p>   
+      </div>
+
+
+
+
+    
+      <div id="a5" class="B" >
+        <p class="text-starting">Automotive essentials | Up to 60% off</p>
+        <div id="try">
+        <div id="h1" class="D"></div>
+        <div id="h2" class="D"></div>
+        <div id="h3" class="D"></div>
+        <div id="h4" class="D"></div>
+      </div>
+      <p ><a>see more</a></p>   
+      </div>
+
+
+
+
+      <div id="a6" class="B">
+        <p class="text-starting">Up to 60% off | Styles for women</p>
+        <div id="try">
+        <div id="i1" class="D"></div>
+        <div id="i2" class="D"></div>
+        <div id="i3" class="D"></div>
+        <div id="i4" class="D"></div>
+      </div>
+      <p ><a>see more</a></p>   
+      </div>
+
+
+
+      <div id="a7" class="B" >
+        <p class="text-starting">Explore more from Small Businesses</p>
+        <div id="try">
+        <div id="j1" class="D"></div>
+        <div id="j2" class="D"></div>
+        <div id="j3" class="D"></div>
+        <div id="j4" class="D"></div>
+      </div>
+      <p ><a>see more</a></p>   
+      </div>
+
+
+
+
+      <div id="a8" class="B" >
+        <p class="text-starting">Best Sellers in Toys & Games</p>
+        <div id="try">
+        <div id="k1" class="D"></div>
+        <div id="k2" class="D"></div>
+        <div id="k3" class="D"></div>
+        <div id="k4" class="D"></div>
+      </div>
+      <p ><a>see more</a></p>   
+      </div>
+    </div>
+
+
+
+      <!-- class=alag and class=x -->
+
+
+      <div class="koses">
+      <div  class="alag">
+        <div id="x1" class="x"></div>
+        <p>iQOO Z9s 5G (Titanium Matte, 8GB RAM, 128GB Storage)</p>
+        <p>&#8377;19,999</p>
+      </div>
+
+
+
+      <div id="a10"  class="alag">
+        <div id="x2" class="x"></div>
+        <p>Samsung Galaxy M15 5G (Celestial Blue,6GB RAM,128GB Storage)</p>
+        <p>&#8377;14,999</p>
+      </div>
+
+
+
+      <div id="a11"  class="alag">
+        <div id="x3" class="x"></div>
+        <p>Apple 2023 MacBook Pro 14-inch, Apple M3 </p>
+        <p> &#8377;28,09,999</p>
+      </div>
+
+
+
+
+      <div id="a12"  class="alag">
+        <div id="x4" class="x"></div>
+        <p>Samsung Galaxy S25 Ultra 5G</p>
+        <p>&#8377;1,41,999</p>
+      </div>
+
+
+
+      <div id="a13"  class="alag">
+        <div id="x5" class="x"></div>
+        <p>Boult X Mustang Newly Launched </p>
+        <p>&#8377;1,499</p>
+      </div>
+
+
+      
+      <div id="a14"  class="alag">
+        <div id="x6" class="x"> </div>
+        <p>Sony PlayStation®5 Console (slim)</p>
+        <p> &#8377;58,999</p>
+      </div>
+
+
+
+      <div id="a15"  class="alag">
+        <div id="x7" class="x"></div>
+        <p>Rockstar Games PS5 Grand Theft Auto V</p>
+        <p>&#8377;1,859</p>
+      </div>
+
+
+
+      
+      <div id="a16"  class="alag">
+        <div id="x8" class="x"></div>
+        <p> PlayStation Sony God Of War Ragnarok</p>
+        <p>&#8377;2,999</p>
+      </div>
+
+
+    
+  
+    </div>
+
+  
+  </main>
+
+
+<!-- footer -->
+
+  <footer>
+    <div class="footer-back">
+      <div id="back-to-top">Back to top</div>
+    </div>
+    <div class="mid-footer">
+    <div class="footer-information">
+      <div id="get-know">
+       <ul>
+        <li>
+          <h3>Get to know us</h3>
+        </li>
+        <li class="footer-same">About Amazon</li>
+        <li class="footer-same">careers</li>
+        <li class="footer-same">Press releases</li>
+        <li class="footer-same">Amazone science</li>
+       </ul>
+
+      </div>
+
+
+      <div id="contact-us">
+        <ul>
+          <li><h3>Contact with us</h3></li>
+          <li class="footer-same">Facebook</li>
+          <li class="footer-same">Instagram</li>
+          <li class="footer-same">Twitter</li>
+        </ul>
+      </div>
+      <div id="make-money">
+        <ul>
+          <li><h3>Make money with us</h3></li>
+          <li class="footer-same">sell on Amazon</li>
+          <li class="footer-same"> Sell under Amazon</li>
+          <li class="footer-same"> Amazone Globel Selling</li>
+          <li class="footer-same"> Supply to Amazon</li>
+          <li class="footer-same"> Advertise your product</li>
+        </ul>
+      </div>
+      <div id="help-you">
+        <ul>
+          <li>
+            <h3>Let us help you</h3>
+          </li>
+          <li class="footer-same">your Account</li>
+          <li class="footer-same">Return centre</li>
+          <li class="footer-same"> 100% parches protection</li>
+          <li class="footer-same"> Amazon app downlode</li>
+          <li class="footer-same" > help</li>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+
+
+    <div class="bottom-footer">
+      <div id="books">
+        <ul>
+          <li >
+            Abebooks
+          </li>
+          <li class="bottom-footer-same">
+            book items 
+          </li>
+          <li class="bottom-footer-same">
+            & collectibles
+          </li>
+        </ul>
+      </div>
+
+
+      <div id="Amazon-web">
+        <ul>
+          <li>
+            Amazon web services
+          </li>
+          <li class="bottom-footer-same">scalable cloud</li>
+          <li class="bottom-footer-same">computing services</li>
+        </ul>
+      </div>
+   
+
+
+    <div id="Audible">
+      <ul>
+        <li>Audible</li>
+        <li class="bottom-footer-same">Downlode</li>
+        <li class="bottom-footer-same">Audio books</li>
+      </ul>
+    </div>
+
+
+    <div id="IMDB">
+      <ul>
+        <li>IMBD</li>
+        <Li class="bottom-footer-same">Movies,TV</Li>
+        <li class="bottom-footer-same">&celebrities</li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+  <div class="copy-right">
+    <div><pre>condition of use & sale  privacy Notice  Interest-Based-Ads</pre></div>
+    <div>
+      &#169 1996-2025,Amazon.com,inc.or its affiliates
+    </div>
+  </div>
+  </footer>
+</body>
+</html>
